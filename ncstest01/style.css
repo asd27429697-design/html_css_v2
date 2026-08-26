@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 17px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #243b8f;
+}
+
+.logo span {
+  color: #16b9d4;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+nav:hover {
+  color: #243b8f;
+}
+
+.hero {
+  height: 270px;
+  background-color: #3445a3;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 37px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 14px;
+}
+
+.features {
+  height: 380px;
+  padding: 70px 20px;
+  background-color: #f8f8f8;
+  display: flex;
+  gap: 20px;
+}
+
+.features-card {
+  height: 230px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 47px 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  font-size: 30px;
+  height: 50px;
+}
+
+.features-card h3 {
+  margin-top: 8px;
+  margin-bottom: 17px;
+  font-size: 17px;
+  color: rgb(68, 68, 196);
+}
+
+.features-card p {
+  font-size: 14px;
+  color: #444;
+}
+
+footer {
+  height: 90px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
