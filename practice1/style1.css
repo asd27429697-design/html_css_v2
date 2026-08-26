@@ -78,7 +78,7 @@ body {
 }
 
 .btn-flollow {
-  background-color: #4f46e5;
+  background-color: #9a97cf;
   color: white;
   width: 100%;
   padding: 12px;
@@ -88,5 +88,5 @@ body {
 }
 
 .btn-flollow:hover {
-  background-color: aqua;
+  background-color: #4f46e5;
 }

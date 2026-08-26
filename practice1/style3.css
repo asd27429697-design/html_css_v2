@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.sum {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
