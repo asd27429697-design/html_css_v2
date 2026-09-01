@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* 헤더 */
+.header-blog {
+  width: 1000px;
+  height: 60px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: url("https://picsum.photos/seed/blog1/1200/300") center/cover;
+}
+
+.header-blog h1 {
+  font-size: 40px;
+}
+
+/* 메인 */
+.content-main {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.content-number {
+  margin-bottom: 30px;
+}
+
+.content-main h3 span {
+  color: #00bfff;
+  font-size: 20px;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  border: 1px solid #eee;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.card-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-text p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.card-date {
+  font-size: 11px;
+  color: #cccccc;
+}
+
+/* 사이드바 */
+.sidebar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 170px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+}

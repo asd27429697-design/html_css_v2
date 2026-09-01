@@ -1,0 +1,191 @@
+/* ================================
+   CSS 변수: 색상 테마와 주요 치수
+================================ */
+:root {
+  --sp-black: #121212;
+  --sp-dark: #181818;
+  --sp-gray: #282828;
+  --sp-light: #b3b3b3;
+  --sp-green: #1db954;
+  --sp-white: #ffffff;
+
+  /* 플레이어 높이를 변수로 뺀다.
+     사이드바와 메인의 높이 계산에 세 번 쓰이므로,
+     숫자를 직접 적으면 하나만 고쳐도 레이아웃이 깨진다 */
+  --player-height: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--sp-black);
+  color: var(--sp-white);
+  overflow: hidden;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--sp-light);
+}
+
+/*(2 ~ 4 컴포넌트 별 반복): 컴포넌트 - 사이드 바 + 메인 (독립 스크롤 생성) */
+
+/* 2단계 레이아웃 */
+.app-layout {
+  display: flex;
+  height: calc(100vh - var(--player-height));
+}
+
+.sidebar {
+  flex: 0 0 240px;
+  background-color: var(--sp-black);
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.main-content {
+  flex: 1;
+  background: linear-gradient(var(--sp-dark), var(--sp-black));
+  padding: 30px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.logo {
+  color: var(--sp-white);
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.nav-item {
+  display: block;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.nav-item.active {
+  color: var(--sp-white);
+}
+
+.player-list {
+  margin-top: 20px;
+  border-top: 1px solid var(--sp-gray);
+  padding-top: 20px;
+}
+
+.player-list h3 {
+  font-size: 14px;
+  color: var(--sp-white);
+
+  letter-spacing: 1px;
+}
+
+.player-list-item {
+  display: flex;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.album-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.album-card {
+  flex: 1 1 160px;
+  max-width: 200px;
+}
+
+.main-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.album-card {
+  background: var(--sp-gray);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.album-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.album-card h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.album-card p {
+  font-size: 12px;
+  color: var(--sp-light);
+}
+
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--player-height);
+
+  background-color: var(--sp-dark);
+  border-top: 1px solid var(--sp-gray);
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.player-info {
+  flex: 0 0 220px;
+}
+
+.player-controls {
+  flex: 0 0 auto;
+}
+
+.player-bar {
+  flex: 1;
+}
+
+.player-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.player-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.song-artist {
+  font-size: 12px;
+  color: var(--sp-light);
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
